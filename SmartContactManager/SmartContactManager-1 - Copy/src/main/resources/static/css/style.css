@@ -1,0 +1,84 @@
+
+
+.banner{
+	background:url(https://images.unsplash.com/photo-1552872673-9b7b99711ebb?auto=format&fit=crop&q=80&w=1000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8MTA4MHxlbnwwfHwwfHx8MA%3D%3D) ;
+	width: 100%;
+	height: 93vh;
+	background-repeat: no-repeat;
+ background-size: cover;
+}
+body{
+	background:lightgray;
+}
+@media only screen and (max-width:600px){
+	.sidebar{
+	width: 80% !important;
+	background-color: white;
+	height: 100vh;
+	padding-top: 20px;
+   position: fixed;
+   z-index: 2;
+}
+.content{
+	margin-left: 0%;
+}
+}
+
+/*side bar*/
+.sidebar{
+	width: 18%;
+	background-color: white;
+	height: 100%;
+	padding-top: 45px;
+   position: fixed;
+}
+.sidebar a{
+	width: 100%;
+	padding: 10px 20px;
+	display: block;
+	text-decoration: none;
+	color: darkgrey;
+}
+.sidebar a:hover{
+	background-color: #e2e2e2;
+	
+}
+
+.sidebar .divider{
+	width: 100%;
+	height: .5px;
+	background: #e2e2e2;
+}
+.content{
+	margin-left: 20%;
+}
+
+.crossBtn{
+	position: absolute;
+	top: 0;
+	right: 35px;
+	font-size: 35px;
+	cursor: pointer;
+}
+.profile_image{
+	width: 35px;
+	height: 35px;
+	object-fit: covers;
+}
+
+
+/*search result*/
+
+.search-contact{
+	position: relative;
+}
+
+.serach-result{
+	position:absolute ;
+	background: white;
+	width: 100%;
+	padding: 10px;
+	border: 1px solid grey;
+	display: none;
+}
+

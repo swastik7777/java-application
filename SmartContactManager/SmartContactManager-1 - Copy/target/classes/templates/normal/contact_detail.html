@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html  xmln:th="http://www.thymeLeaf.org" th:replace="normal/base::Layout(~{::section})"> 
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+	<section>
+		<div class="card" th:if=${contact} >
+		<div class="card-body">
+			
+			<div class="container text-center">
+				<img style="width: 200px; width: 200px;" th:src="@{'/images/'+${contact.image}}"><br>
+				<span style="font-size: 25px; font-weight: 500;" th:text="${contact.name}"></span>
+			</div>
+			
+		</div>
+		</div>
+		
+	</section>
+
+</body>
+</html>
